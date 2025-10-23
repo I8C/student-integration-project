@@ -22,7 +22,7 @@ The starter application is an easy way to test your topic. You will be able to p
 	- Plaze the zip properties into the same folder als the jar file and unzip them
 	- Open a cli and navigate to the JAR file downloaded from GitHub, and run it
 		-> java -Dproperties_path=<path-to-properties> -jar demo-all.jar
-	- Open an webbrowser and browse to [localhoset:8080] (localhost:8080)
+	- Open an webbrowser and browse to [localhost:8080] (localhost:8080)
 	- Try producing and consuming using the starter app.
 	- Don't forget to stop producing your events
 	
