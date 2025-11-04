@@ -62,7 +62,7 @@ The backend API that was created during the first day should require a valid OAu
 --
 ClientId: 7304faca-f8d6-44d5-b0e1-bb40fb1d53e6
 
-ClientSecret:Nb18Q~oNNQ.z73VrRA3njHkbqAEoKJNNV2wf.biA
+ClientSecret: <ASK INSTRUCTOR>
 
 Scope: api://2c6d0b91-3915-4802-b335-7c641e6b09cc/.default
 
