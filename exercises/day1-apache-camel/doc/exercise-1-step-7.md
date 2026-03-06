@@ -8,7 +8,7 @@ OR
 
 ## secure you API with OAuth2
 There is an Authorization Server configured for us on Azure.  
-You can find the endpoints at https://sts.windows.net/09385aae-477d-4c3c-bb3d-36f75a52cdc3/.well-known/openid-configuration.  
+You can find the endpoints at https://sts.windows.net/168b3482-55fe-4cf6-bc29-bd8c9fbc9999/.well-known/openid-configuration.  
 
 1. uncomment the `<!-- Quarkus security dependencies ... -->` block in the _pom.xml_.  
 2. uncomment these configuration keys in the _application.properties_:
@@ -19,11 +19,11 @@ You can find the endpoints at https://sts.windows.net/09385aae-477d-4c3c-bb3d-36
    - quarkus.http.auth.permission.public.paths=/q/*,/api-doc/*,/openapi/*,/openapi
    - quarkus.http.auth.permission.public.policy=permit
    
-   The result is that your application will expect and validate OAuth2 tokens in any request to your Camel REST API and authorize access to the documentation.  
+   The result is that your application will expect and validate OAuth2 tokens in any request to your Camel REST API on paths `/v1/tickets/,/v1/purchases/` and authorize access without token on the paths `/q/,/api-doc/,/openapi/*,/openapi`.  
    The validation will check that:
    * the claim 'iss' (=issuer) has the configured value
-   * the signature of the token is valid with using the JWK  downloaded from the configured URL.  
-     JWK is part of the JOSE specification. It's a  Keys represented as Json (Json Web Key).
+   * the signature of the token is valid against the JWK  downloaded from the configured URL.  
+     JWK is part of the JOSE specification. It's a  Keys represented in the Json (Json Web Key) format.
 
 3. verify that you cannot query you API anymore.
    You will now get an HTTP 401 unauthorized error response when you query it.
