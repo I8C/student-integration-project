@@ -19,7 +19,7 @@ You can find the endpoints at https://sts.windows.net/09385aae-477d-4c3c-bb3d-36
    - quarkus.http.auth.permission.public.paths=/q/*,/api-doc/*,/openapi/*,/openapi
    - quarkus.http.auth.permission.public.policy=permit
    
-   The result is that your application will expect and validate OAuth2 tokens in any request to your Camel REST API.  
+   The result is that your application will expect and validate OAuth2 tokens in any request to your Camel REST API and authorize access to the documentation.  
    The validation will check that:
    * the claim 'iss' (=issuer) has the configured value
    * the signature of the token is valid with using the JWK  downloaded from the configured URL.  
