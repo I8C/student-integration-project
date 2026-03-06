@@ -1,6 +1,7 @@
 package be.openint.pxltraining;
 
 import be.openint.pxltraining.generated.PurchaseStatus;
+import io.quarkus.arc.lookup.LookupIfProperty;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.apache.avro.Schema;
@@ -17,6 +18,7 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.UUID;
 
+@LookupIfProperty(name = "kafka.enabled", stringValue = "true")
 @ApplicationScoped
 public class TicketPurchaseStatusEventsRoute extends RouteBuilder {
 
