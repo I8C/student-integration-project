@@ -1,6 +1,6 @@
 ## JSON Web Tokens (JWT)
 
-In this lab, we are going to see how we can protoct our API using JSON Web Tokens (JWT). We will create a JWT token and validate it in Azure API Management. 
+In this lab, we are going to see how we can protect our API using JSON Web Tokens (JWT). We will create a JWT token and validate it in Azure API Management. 
 
 JSON Web Tokens are an open-industry standard method for representing claims securely between two parties. More info at <https://jwt.io>. 
 
@@ -44,7 +44,7 @@ The token payload contains the following information:
 ### Add the JWT Token to the API Management
 
 - Back in APIM, open the **Festival Ticket Sales API xx** API and select **All operations**.
-- In the **Code View** add an inbound `validate-jwt` policy with the signing key.
+- Open the Inbound processing **Policies** in the policy code editor add an inbound `validate-jwt` policy with the signing key.
 
   ```xml
     <validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid.">

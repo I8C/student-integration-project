@@ -17,7 +17,7 @@ The next step is to connect the API to the backend service. This will allow the 
 1. In the Azure portal, go to your API Management instance and click on **APIs** in the left-hand menu.
 2. Click on the **Festival Ticket Sales API xx** API.
 3. Click on the **Settings** tab.
-4. Change the value of the **Backend URL** to the URL of the Camel API created during day 1. The URL should resemble `http://<your-instance-name>-.eu-central-1.compute.amazonaws.com:8080/api/v1`. Replace `<your-instance-name>` with the values from the previous exercise in Camel. If you don't have a working API from day 1 then you can use the following mock API URL: `http://ec2-user@ec2-3-72-47-60.eu-central-1.compute.amazonaws.com:8080/v1/`.
+4. Change the value of the **Web service URL** to the URL of the Camel API created during day 1. The URL should resemble `http://<your-instance-name>-.eu-central-1.compute.amazonaws.com:8080/api/v1`. Replace `<your-instance-name>` with the values from the previous exercise in Camel. If you don't have a working API from day 1 then you can use the following mock API URL: `http://ec2-3-121-222-217.eu-central-1.compute.amazonaws.com:8080/v1/`.
 5. Press **Save**.
 
   ![APIM Change backend](../../assets/images/apim-change-backend.png)
