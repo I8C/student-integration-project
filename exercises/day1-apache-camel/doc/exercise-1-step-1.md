@@ -8,7 +8,7 @@
 4. Ensure Docker or Podman is running
 5. Run the application:  
 	- in Git-bash, go to your application directory: cd /c/path/to/your/repository/**exercises/day1-apache-camel**  
-	- run: quarkus dev  
+	- run: mvn quarkus:dev  
       This will start your application in dev mode which comes with the handy dashboard that you can find from http://localhost:8080 in your browser.
       It comes with automatic reload of your code as well.
 6. When the application runs, somewhere at the end of the logs in the console you should see a log entry with the text ">>>>>>>>> hello world! <<<<<<<<<<"  
