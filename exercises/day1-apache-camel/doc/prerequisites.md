@@ -7,6 +7,16 @@ To complete the exercises you need the following tools and set-up:
   * Most IDEs include a built-in Git client.
   * Alternatively, install Git for Windows: https://git-scm.com/downloads and accept the default options. This allows you to follow the command-line instructions in the exercise.
 
+- **Docker Desktop:**
+  * Install Docker Desktop for Windows: https://docs.docker.com/desktop/setup/install/windows-install/
+  * Use the default WSL 2 backend.
+  * Start Docker Desktop and verify the installation:
+
+    ```bash
+    docker --version
+    docker run hello-world
+    ```
+
 - **Java JDK 21:** Install Java 21 using one of the following methods.
 
   **Manual installation**
