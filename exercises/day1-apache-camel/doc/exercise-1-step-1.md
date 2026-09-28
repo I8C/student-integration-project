@@ -2,7 +2,7 @@
 
 ## Get to know a camel route
 
-1. Clone the base project: git@github.com:I8C/student-integration-project.git  
+1. Clone the base project: [git@github.com:I8C/student-integration-project.git](git@github.com:I8C/student-integration-project.git)  
 2. The code lies under the exercises/day1-apache-camel directory in the main branch  
 3. Open the project subdirectory in Intellij  
 4. Ensure Docker or Podman is running
@@ -63,4 +63,4 @@ Configure Camel rest to define an api context: https://github.com/apache/camel/b
    ```
    Quarkus should reload the change automatically. Once restarted, navigate to http://localhost:8080/api-doc to see the result.
    
-    [to step 2](exercise-1-step-2) 
+    [to step 2](exercise-1-step-2.md) 

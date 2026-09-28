@@ -38,4 +38,4 @@
    In this example, the PID is 474523. Use it to kill your java process:  
    `kill -9 474523`
 
-    [to step 7](exercise-1-step-7) 
+    [to step 7](exercise-1-step-7.md) 

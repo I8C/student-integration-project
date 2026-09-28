@@ -37,4 +37,4 @@ Now lets send an event on local Kafka container.
 5. you should see the log of your route in the Quarkus output log
 6. you should see the content of your request body as a new entry in the Kafka topic on the dashboard at http://localhost:8080/q/dev-ui/quarkus-kafka-client/topics  
    
-    [to step 3](exercise-1-step-3) 
+    [to step 3](exercise-1-step-3.md) 

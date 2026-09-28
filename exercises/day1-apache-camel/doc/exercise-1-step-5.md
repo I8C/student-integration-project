@@ -32,4 +32,4 @@ Configure that in the configuration of your application.properties:
    You'll find a valid dummy body in your test resources of the project at src/test/resources/samples/ticketPurchaseBody.json.  
    This time, the 'quarkus dev' command will not start a Kafka instance for you because you have configured an existing kafka to connect.
    
-    [to step 6](exercise-1-step-6) 
+    [to step 6](exercise-1-step-6.md) 

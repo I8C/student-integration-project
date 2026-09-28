@@ -115,4 +115,4 @@ To create your Avro Schema from the avro definition:
 5. Send a POST request with a body conform to the OpenAPI specification (see previous point for an example) otherwise you'll get an error because the input is invalid.
 6. Check that you see the log "receiving ticket purchase request for userId 3fa85f64-5717-4562-b3fc-2c963f66afa6" with your id and that the ticket is in Kafka
    
-    [to step 4](exercise-1-step-4) 
+    [to step 4](exercise-1-step-4.md) 
