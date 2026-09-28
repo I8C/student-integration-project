@@ -38,7 +38,7 @@ We will use it to validate the input and create the PurchaseRequest object from 
 
    
 2. test that you are sending something to Kafka using the quarkus dev service for kafka.  
-   Start your application with 'quarkus dev' and send a ticket purchase request to your application with postman.
+   Start your application with 'mvn quarkus:dev' and send a ticket purchase request to your application with postman.
    Ticket as json example:  
    ```json
    {
@@ -106,7 +106,7 @@ To create your Avro Schema from the avro definition:
    import org.apache.avro.generic.GenericRecord;
    import org.apache.avro.io.*;
    ```
-3. Run the application with 'quarkus dev' to verify it's working with the avro schema serialization
+3. Run the application with 'mvn quarkus:dev' to verify it's working with the avro schema serialization
 4. Run the integration test 'TicketPurchaseAPIRouteITest' from the test sources to run the route.  
    That test is using the TestContainer technology to create a Kafka container and connect to it.  
    **Your Docker/Podman desktop has to run.**  

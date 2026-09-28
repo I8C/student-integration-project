@@ -22,22 +22,22 @@ For your information, some classes (PurchaseAcceptedResponse, PurchaseRequest, .
 You can ignore those errors until you have compiled your code for the 1st time.
 
 1. In the TicketPurchaseAPIRoute class, define a REST route with the REST DSL Contract first approach: https://camel.apache.org/manual/rest-dsl-openapi.html  
-   Pass the _openApiFilename_ variable to the rest configuration. The _openApiFilename_ is set to the value of _ticket-purchase.openapi.filename_ configuration from the _resources/application.properties_ configuration file. That is the path the the file containing the OpenApi specification.  
-   To do this, paste this a the begin of the existing `public void configure()` method:
+   Pass the _openApiFilename_ variable to the rest configuration. The _openApiFilename_ is set to the value of _ticket-purchase.openapi.filename_ configuration from the _resources/application.properties_ configuration file. That is the path to the file containing the OpenApi specification.  
+   To do this, paste this a the **begin** of the existing `public void configure()` method:
    
    ```java
    rest()
       .openApi(openApiFilename).getOpenApi().setMissingOperation("ignore");
    ```
    
-   Thanks to the contract first approach, Camel will expect to have a route with a specific URI prefixed with "direct:" followed by operationId from the OpenAPI spec to handle API requests for that "operation".
+   Thanks to the contract first approach, Camel will expect to have a route with a specific URI prefixed with "direct:" followed by operationId from the [OpenAPI spec](../src/main/openapi/Festival_Ticket_Sales_API.json) to handle API requests for that "operation".
 2. Create the route that will receive the API request based on the operationId of the ticket purchase request in the OpenApi specification.  
    Replace `from("scheduler:...")` with the expected route name based on the operationId 'purchaseTicket' of the purchase request in the specification:  
    ```java
    from("direct:purchaseTicket")
    ```
 
-3. Run the application ('quarkus dev' command from the directory of the application) and test it with postman.  
+3. Run the application ('mvn quarkus:dev' command from the directory of the application) and test it with postman.  
    In postman, create an HTTP POST request to http://localhost:8080/v1/tickets/:ticketId/purchase.  
    In the "Params" tab, set a value for the "Path Variables" "ticketId". 123 for example.
    Set the request header 'Content-Type' to 'application/json'.  
