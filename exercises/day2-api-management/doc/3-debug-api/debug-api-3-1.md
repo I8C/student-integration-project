@@ -9,12 +9,13 @@ In this exercise, we will debug an API operation in Azure API Management. We wil
 
 1. In the Azure portal, go to your API Management instance and click on **APIs** in the left-hand menu.
 2. Click on the **Festival Ticket Sales API xx** API.
-3. Click on the **Operations** tab.
+3. Click on the **Test** tab.
 4. Click on the **Initiates a new ticket purchase.** operation.
-5. Enter a valid JSON object in the **Request body** section. It should be present already. In case it's missing  reuse the value used during the previous exercises.
-6. Click on **Trace** to send the request with tracing enabled.
-7. The "HTTP response" should display a 200 OK response.
-8. Click on the **Trace** tab to view the request and response details.
+5. Enter a valid tiketId under **Template parameters** (e.g. '123' ) 
+6. Enter a valid JSON object in the **Request body** section. It should be present already. In case it's missing  reuse the value used during the previous exercises.
+7. Click on **Trace** to send the request with tracing enabled.
+8. The "HTTP response" should display a 200 OK response.
+9. Click on the **Trace** tab to view the request and response details.
 
   ![APIM Change backend](../../assets/images/apim-tracing.png)
 

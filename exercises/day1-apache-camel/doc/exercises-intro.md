@@ -19,4 +19,4 @@ See [prerequisites.md](prerequisites.md)
 3. Extra: consume Kafka events and send a notification for each of them.
 4. Extra: error handling.
 
-[→ Go to step 1](exercise-1-step-1)
+[→ Go to step 1](exercise-1-step-1.md)

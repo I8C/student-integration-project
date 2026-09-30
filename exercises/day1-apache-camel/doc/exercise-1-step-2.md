@@ -26,7 +26,7 @@
 
 Now lets send an event on local Kafka container.
 
-1. start the application with 'quarkus dev' if it did not reload     
+1. start the application with 'mvn quarkus:dev' if it did not reload     
 2. navigate to http://localhost:8080/q/dev-ui/quarkus-kafka-client/topics
 3. create a topic with the same name as the value of your configuration 'kafka.festival.purchases.topic'. It's "TICKET.PURCHASE.REQUESTED_PRODUCED" if you did not change anything. Click the "+" icon on the bottom right, enter the topic name and confirm (click "create").
 4. send a request on you API using Postman: 
@@ -37,4 +37,4 @@ Now lets send an event on local Kafka container.
 5. you should see the log of your route in the Quarkus output log
 6. you should see the content of your request body as a new entry in the Kafka topic on the dashboard at http://localhost:8080/q/dev-ui/quarkus-kafka-client/topics  
    
-    [to step 3](exercise-1-step-3) 
+    [to step 3](exercise-1-step-3.md) 

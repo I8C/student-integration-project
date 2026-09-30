@@ -30,6 +30,6 @@ Configure that in the configuration of your application.properties:
        ```
 2. Run you application and send a valid request body to your API. Check (or ask to check if you don't have access) on the EEM dashboard if your event is present on the topic.  
    You'll find a valid dummy body in your test resources of the project at src/test/resources/samples/ticketPurchaseBody.json.  
-   This time, the 'quarkus dev' command will not start a Kafka instance for you because you have configured an existing kafka to connect.
+   This time, the 'mvn quarkus:dev' command will not start a Kafka instance for you because you have configured an existing kafka to connect.
    
-    [to step 6](exercise-1-step-6) 
+    [to step 6](exercise-1-step-6.md) 

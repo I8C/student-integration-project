@@ -24,6 +24,6 @@ We will use the PurchaseAcceptedResponse bean generated from the specification t
    - populate a PurchaseAcceptedResponse with the information of the request just created
    - set it as the response:`...setBody(acceptedResponse);`
    
-2. test that you are receiving the response in the expected format with postman after starting the application with `quarkus dev`.
+2. test that you are receiving the response in the expected format with postman after starting the application with `mvn quarkus:dev`.
 
-    [to step 5](exercise-1-step-5) 
+    [to step 5](exercise-1-step-5.md) 
