@@ -10,7 +10,7 @@
    b. Once logged on the remote VM, install java from the CLI: _sudo dnf install java-21-amazon-corretto-devel -y_
 0. copy your kafka pem certificate received to your VM:    
 
-   `scp path/to/kafka.pem i [PATH-TO-PEM-KEY] ec2-user@[YOUR-VM-DNS]:~/purchases.kafka.pem`  
+   `scp -i [PATH-TO-PEM-KEY] path/to/kafka.pem ec2-user@[YOUR-VM-DNS]:~/purchases.kafka.pem`  
    
    Set the value of the configuration camel.component.kafka.ssl-truststore-location to purchases.kafka.pem:  
    
