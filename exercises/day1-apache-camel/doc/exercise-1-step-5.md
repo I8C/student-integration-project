@@ -2,6 +2,8 @@
 
 ## send your event to the real kafka
 
+Download page: http://ec2-35-159-94-40.eu-central-1.compute.amazonaws.com  
+
 The real kafka is using enterprise requirements to connect.  
 To be allowed to send events on it, you have to authenticate and to encrypt the connection. Follow these step to send event to kafka.
 
