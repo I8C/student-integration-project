@@ -3,11 +3,6 @@
 ## deploy you application in the cloud
 
 0. ask the DNS of your VM in the cloud, the private key to access it is available in the assets directory of this exercise
-0. install java on your VM.
-   In git bash: 
-   a. Open a shell on your cloud VM: _ssh -i [PATH-TO-PEM-KEY] ec2-user@[YOUR-VM-DNS]_  
-   The PATH-TO-PEM-KEY is *assets/PXL-key.pem* in the root directory of this exercises.
-   b. Once logged on the remote VM, install java from the CLI: _sudo dnf install java-21-amazon-corretto-devel -y_
 0. copy your kafka pem certificate received to your VM:    
 
    `scp -i [PATH-TO-PEM-KEY] path/to/kafka.pem ec2-user@[YOUR-VM-DNS]:~/purchases.kafka.pem`  
@@ -19,7 +14,7 @@
 0. build your application as an executable jar in git bash.  
    From the root of your application run: `mvn clean package -DskipTests -Dquarkus.package.jar.type=uber-jar`  
 0. copy the resulting jar to your VM:   
-   `scp -i [PATH-TO-PEM-KEY] target/pxl-training-base-1.0-SNAPSHOT-runner.jar ec2-user@[YOUR-VM-DNS]:~`
+   `scp -i [PATH-TO-PEM-KEY] target/pxl-training-base-1.0-SNAPSHOT-runner.jar ec2-user@[YOUR-VM-DNS]:~/`
 0. run your application:  
    `nohup java -jar pxl-training-base-1.0-SNAPSHOT-runner.jar 2>&1 &`  
    You'll find a 'nohup.out' file in the same directory. It collects the output logs of your application.
