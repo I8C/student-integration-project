@@ -1,3 +1,37 @@
+VVVVVVVVV NEW DNSes for 08/10/2028 VVVVVVVV
+
+NAME    ROLE    PUBLIC_DNS      APPLICATION_URL
+PXL-student01   student ec2-3-72-10-21.eu-central-1.compute.amazonaws.com       http://ec2-3-72-10-21.eu-central-1.compute.amazonaws.com:8080
+PXL-student02   student ec2-3-120-174-150.eu-central-1.compute.amazonaws.com    http://ec2-3-120-174-150.eu-central-1.compute.amazonaws.com:8080
+PXL-student03   student ec2-18-195-227-138.eu-central-1.compute.amazonaws.com   http://ec2-18-195-227-138.eu-central-1.compute.amazonaws.com:8080
+PXL-student04   student ec2-18-196-185-45.eu-central-1.compute.amazonaws.com    http://ec2-18-196-185-45.eu-central-1.compute.amazonaws.com:8080
+PXL-student05   student ec2-52-58-239-143.eu-central-1.compute.amazonaws.com    http://ec2-52-58-239-143.eu-central-1.compute.amazonaws.com:8080
+PXL-student06   student ec2-35-156-11-79.eu-central-1.compute.amazonaws.com     http://ec2-35-156-11-79.eu-central-1.compute.amazonaws.com:8080
+PXL-student07   student ec2-18-193-113-180.eu-central-1.compute.amazonaws.com   http://ec2-18-193-113-180.eu-central-1.compute.amazonaws.com:8080
+PXL-student08   student ec2-3-75-191-75.eu-central-1.compute.amazonaws.com      http://ec2-3-75-191-75.eu-central-1.compute.amazonaws.com:8080
+PXL-student09   student ec2-3-123-34-213.eu-central-1.compute.amazonaws.com     http://ec2-3-123-34-213.eu-central-1.compute.amazonaws.com:8080
+PXL-student10   student ec2-3-64-252-164.eu-central-1.compute.amazonaws.com     http://ec2-3-64-252-164.eu-central-1.compute.amazonaws.com:8080
+PXL-student11   student ec2-18-184-146-135.eu-central-1.compute.amazonaws.com   http://ec2-18-184-146-135.eu-central-1.compute.amazonaws.com:8080
+PXL-student12   student ec2-3-79-60-82.eu-central-1.compute.amazonaws.com       http://ec2-3-79-60-82.eu-central-1.compute.amazonaws.com:8080
+PXL-student13   student ec2-63-183-214-31.eu-central-1.compute.amazonaws.com    http://ec2-63-183-214-31.eu-central-1.compute.amazonaws.com:8080
+PXL-student14   student ec2-18-199-95-14.eu-central-1.compute.amazonaws.com     http://ec2-18-199-95-14.eu-central-1.compute.amazonaws.com:8080
+PXL-student15   student ec2-3-71-110-176.eu-central-1.compute.amazonaws.com     http://ec2-3-71-110-176.eu-central-1.compute.amazonaws.com:8080
+PXL-student16   student ec2-3-64-7-23.eu-central-1.compute.amazonaws.com        http://ec2-3-64-7-23.eu-central-1.compute.amazonaws.com:8080
+PXL-student17   student ec2-3-120-149-245.eu-central-1.compute.amazonaws.com    http://ec2-3-120-149-245.eu-central-1.compute.amazonaws.com:8080
+PXL-student18   student ec2-3-121-76-125.eu-central-1.compute.amazonaws.com     http://ec2-3-121-76-125.eu-central-1.compute.amazonaws.com:8080
+PXL-student19   student ec2-18-184-110-49.eu-central-1.compute.amazonaws.com    http://ec2-18-184-110-49.eu-central-1.compute.amazonaws.com:8080
+PXL-student20   student ec2-54-93-242-236.eu-central-1.compute.amazonaws.com    http://ec2-54-93-242-236.eu-central-1.compute.amazonaws.com:8080
+PXL-student21   student ec2-18-159-149-56.eu-central-1.compute.amazonaws.com    http://ec2-18-159-149-56.eu-central-1.compute.amazonaws.com:8080
+PXL-student22   student ec2-3-79-149-1.eu-central-1.compute.amazonaws.com       http://ec2-3-79-149-1.eu-central-1.compute.amazonaws.com:8080
+PXL-student23   student ec2-3-124-1-126.eu-central-1.compute.amazonaws.com      http://ec2-3-124-1-126.eu-central-1.compute.amazonaws.com:8080
+PXL-student24   student ec2-18-192-214-88.eu-central-1.compute.amazonaws.com    http://ec2-18-192-214-88.eu-central-1.compute.amazonaws.com:8080
+PXL-student25   student ec2-52-59-190-20.eu-central-1.compute.amazonaws.com     http://ec2-52-59-190-20.eu-central-1.compute.amazonaws.com:8080
+PXL-student26   student ec2-3-76-220-185.eu-central-1.compute.amazonaws.com     http://ec2-3-76-220-185.eu-central-1.compute.amazonaws.com:8080
+PXL-student27   student ec2-3-79-56-216.eu-central-1.compute.amazonaws.com      http://ec2-3-79-56-216.eu-central-1.compute.amazonaws.com:8080
+PXL-student28   student ec2-52-28-68-1.eu-central-1.compute.amazonaws.com       http://ec2-52-28-68-1.eu-central-1.compute.amazonaws.com:8080
+
+VVVVVVVVV OLD DNSes VVVVVVVV
+
 NAME    PUBLIC_DNS      APPLICATION_URL
 PXL-student01   ec2-3-76-203-182.eu-central-1.compute.amazonaws.com     http://ec2-3-76-203-182.eu-central-1.compute.amazonaws.com:8080
 PXL-student02   ec2-18-199-100-232.eu-central-1.compute.amazonaws.com   http://ec2-18-199-100-232.eu-central-1.compute.amazonaws.com:8080
